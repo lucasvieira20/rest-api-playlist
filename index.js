@@ -1,8 +1,12 @@
 const express = require('express');
 const routes = require('./routes/api');
+const bodyParser = require('body-parser');
 
 //Set Up express App
 const app = express();
+
+
+app.use(bodyParser.json());
 
 // Initialize Routes
 app.use('/api',routes);
