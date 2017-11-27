@@ -7,10 +7,6 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Connect to MongoDB
-// var promise = mongoose.connect('mongodb://lucasvieira23:Kyngler#1020@cluster0-shard-00-00-ckh3q.mongodb.net:27017,cluster0-shard-00-01-ckh3q.mongodb.net:27017,cluster0-shard-00-02-ckh3q.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin', {
-// 	useMongoClient: true,
-// });
-
 var promise = mongoose.connect('mongodb://localhost', {
 	useMongoClient: true,
 });
